@@ -1778,10 +1778,21 @@ input, select, textarea {
 
 /* Columns */
 	.column {
-		float: left;
-		width: 50%;
+		display: 25%;
+		padding: 20px;
 		text-align: center;
-		padding: 0 2em 0 2em;
+	}
+	@media screen {
+		.column {
+		  flex: 50%;
+		}
+	}
+	  
+	  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+		.row {
+			flex-direction: column;
+		}
 	}
 	
 /* Author */

@@ -1781,6 +1781,7 @@ input, select, textarea {
 		float: left;
 		width: 50%;
 		text-align: center;
+		padding: 0 2em 0 2em;
 	}
 	
 /* Author */

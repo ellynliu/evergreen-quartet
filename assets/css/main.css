@@ -72,6 +72,13 @@ input, select, textarea {
 	appearance: none;
 }
 
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -182,11 +189,11 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #2ebaae !important;
+			color: #7e987a !important;
 		}
 
 			a:hover:before {
-				color: #2ebaae !important;
+				color: #7e987a !important;
 			}
 
 	strong, b {
@@ -1769,6 +1776,13 @@ input, select, textarea {
 
 		}
 
+/* Columns */
+	.column {
+		float: left;
+		width: 50%;
+		text-align: center;
+	}
+	
 /* Author */
 
 	.author {
@@ -1891,8 +1905,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #2ebaae;
-			color: #2ebaae !important;
+			box-shadow: inset 0 0 0 1px #7e987a;
+			color: #7e987a !important;
 		}
 
 			input[type="submit"]:hover:active,
@@ -2070,8 +2084,8 @@ input, select, textarea {
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #2ebaae;
-			box-shadow: inset 0 0 0 1px #2ebaae;
+			border-color: #7e987a;
+			box-shadow: inset 0 0 0 1px #7e987a;
 		}
 
 	.select-wrapper {
@@ -2212,8 +2226,8 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #2ebaae;
-			box-shadow: 0 0 0 1px #2ebaae;
+			border-color: #7e987a;
+			box-shadow: 0 0 0 1px #7e987a;
 		}
 
 	input[type="radio"] + label:before {
@@ -2311,6 +2325,10 @@ input, select, textarea {
 			float: right;
 			padding: 0 0 1em 1.5em;
 			top: 0.25em;
+		}
+
+		.image.circle {
+			border-radius: 50%;
 		}
 
 		.image.fit {
@@ -3414,17 +3432,14 @@ input, select, textarea {
 	#intro .logo {
 		border-bottom: 0;
 		display: inline-block;
-		margin: 0 0 1em 0;
+		margin: 0 0 0.3rem -0.3rem;
 		overflow: hidden;
 		position: relative;
 		width: 4em;
 	}
 
 		#intro .logo:before {
-			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100px' height='100px' viewBox='0 0 100 100' preserveAspectRatio='none' zoomAndPan='disable'%3E%3Cpolygon points='0,0 100,0 100,25 50,0 0,25' style='fill:%23f4f4f4' /%3E%3Cpolygon points='0,100 100,100 100,75 50,100 0,75' style='fill:%23f4f4f4' /%3E%3C/svg%3E");
 			background-position: top left;
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3585,7 +3600,7 @@ input, select, textarea {
 					}
 
 					#menu .links > li a:hover h3 {
-						color: #2ebaae;
+						color: #7e987a;
 					}
 
 				#menu .links > li:first-child {
